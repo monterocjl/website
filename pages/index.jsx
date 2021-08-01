@@ -30,7 +30,7 @@ export default function Home({ posts }) {
       </div>
 
       <Servicios />
-      <h1>Prueba</h1>
+      <h1>Prueba final de que si se actualizan los cambios</h1>
     </Layout>
   );
 }
