@@ -1,12 +1,12 @@
 import { MDXRemote } from "next-mdx-remote";
 import { getFileBySlug, getFiles } from "../../lib/mdx";
-import MDXComponents from "../../components/MDXComponents";
+
 import Layout from "../../components/Layout";
 
 export default function Post({ source, frontmatter }) {
   return (
     <Layout>
-      <MDXRemote {...source} components={MDXComponents} />
+      <MDXRemote {...source} />
     </Layout>
   );
 }
