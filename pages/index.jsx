@@ -30,7 +30,7 @@ export default function Home({ posts }) {
       </div>
 
       <Servicios />
-      <h1>Prueba final</h1>
+      <h1>Prueba</h1>
     </Layout>
   );
 }
