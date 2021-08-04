@@ -42,10 +42,13 @@ export default function Navbar() {
               display={{ base: "none", md: "flex" }}
             >
               <Link href="/">
+                <a className="navbar-titles">Inicio</a>
+              </Link>
+              <Link href="/about">
                 <a className="navbar-titles">Sobre mi</a>
               </Link>
 
-              <Link href="/">
+              <Link href="/portafolio">
                 <a className="navbar-titles">Portafolio</a>
               </Link>
 
@@ -53,16 +56,20 @@ export default function Navbar() {
                 <a className="navbar-titles">Blog</a>
               </Link>
             </HStack>
-            <Button
-              variant={"outline"}
-              borderColor={"#4e77f9"}
-              color={"#4e77f9"}
-              size={"sm"}
-              mr={4}
-              leftIcon={<EmailIcon />}
-            >
-              Contacto
-            </Button>
+            <Link href="/contacto">
+              <a>
+                <Button
+                  variant={"outline"}
+                  borderColor={"#4e77f9"}
+                  color={"#4e77f9"}
+                  size={"sm"}
+                  mr={4}
+                  leftIcon={<EmailIcon />}
+                >
+                  Contacto
+                </Button>
+              </a>
+            </Link>
 
             <DarkModeSwitch />
 
@@ -84,10 +91,14 @@ export default function Navbar() {
           <Box align="right" pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               <Link href="/">
+                <a className="navbar-titles">Inicio</a>
+              </Link>
+
+              <Link href="/about">
                 <a className="navbar-titles">Sobre mi</a>
               </Link>
 
-              <Link href="/">
+              <Link href="/portafolio">
                 <a className="navbar-titles">Portafolio</a>
               </Link>
 
@@ -97,14 +108,18 @@ export default function Navbar() {
               <div>
                 <a
                   className="social-footer"
-                  href="https://twitter.com"
+                  href="https://twitter.com/monterocjl"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <Icon as={GrTwitter} />
                 </a>
 
-                <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                <a
+                  href="https://instagram.com/crecimiento.digital_"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Icon as={GrInstagram} />
                 </a>
               </div>

@@ -28,10 +28,10 @@ export default function Blog({ posts }) {
               <a>
                 <Box
                   className="blogs-page_box_article-card"
-                  bg={colorMode === "dark" ? "#0d2231" : "#f7fafc"}
+                  bg={colorMode === "dark" ? "none" : "#f7fafc"}
                   boxShadow={
                     colorMode === "dark"
-                      ? "0 21px 23px -20px #4e77f957"
+                      ? "none"
                       : "0 21px 23px -20px #004aa733"
                   }
                 >
@@ -42,9 +42,33 @@ export default function Blog({ posts }) {
                   ></Image>
 
                   <Box className="blogs-page_box_article-card_title">
-                    <h1>{post.title}</h1>
-                    <h2>{post.date}</h2>
+                    <h2 className="blogs-page_box_article-card_title_h2">
+                      {post.title}
+                    </h2>
+                    <Box display={'flex'}>
+                        <Box 
+                          mr={'8px'}
+                          color={colorMode === 'dark' ? '#4e77f9' : '#757575'}
+                          fontSize={'15px'}
+                        >
+                          <p className="blogs-page_box_article-card_title_fecha font-for-parrafos">{post.date} • </p>
+                        </Box>
+                        <Box className=''
+                          display={'flex'}
+                          color={colorMode === 'dark' ? 'white' : '#091721'}
+                          bg={colorMode === 'dark' ? '#4e77f9' : '#e2e8f0'}
+                          borderRadius="xl"
+                          px={3}
+                          fontSize={'12px'}
+                          width={'fit-content'}
+                          alignItems={'center'}
+                        >
+                        {post.etiqueta}
+                        </Box>
+                      </Box>
+                      
                   </Box>
+                  
                 </Box>
               </a>
             </Link>

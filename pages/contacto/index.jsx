@@ -5,11 +5,10 @@ import Layout from "../../components/Layout";
 export default function About() {
   return (
     <Layout
-      title="Juan Montero - Sobre mi"
+      title="Juan Montero - Contacto"
       description="Desarrollador Web y Diseñador UX/UI"    
     >
-      <h1 >Sobre mi</h1>
-
+      <h1>Contacto</h1>
     </Layout>
   );
 }

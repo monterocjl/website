@@ -17,6 +17,7 @@ export default function Home({ posts }) {
         <h1 className="titulo-home">Desarrollador Web y Diseñador UX/UI</h1>
       </div>
       <div className="tag-container">
+        <Link href='/blog'><a>
         <Button
           variant={"outline"}
           borderColor={"#4e77f9"}
@@ -27,6 +28,7 @@ export default function Home({ posts }) {
         >
           Ver blog
         </Button>
+        </a></Link>
       </div>
 
       <Servicios />
