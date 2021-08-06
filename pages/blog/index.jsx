@@ -24,27 +24,27 @@ export default function Blog({ posts }) {
       <Box className="blog-page">
         <Box className="blogs-page_box">
           {posts.map((post) => (
-            <Link key={post.slug} href={`blog/${post.slug}`}>
-              <a>
+            <>
+            
                 <Box
                   className="blogs-page_box_article-card"
-                  bg={colorMode === "dark" ? "none" : "#f7fafc"}
+                  bg={colorMode === "dark" ? "#0b1c28" : "#f7fafc"}
                   boxShadow={
                     colorMode === "dark"
                       ? "none"
                       : "0 21px 23px -20px #004aa733"
                   }
                 >
+                  <Link key={post.slug} href={`blog/${post.slug}`}>
+                      <a>
                   <Image
                     className="blogs-page_box_article-card_img"
                     src={post.img}
                     alt="{post.title}"
                   ></Image>
-
+                  </a>
+                  </Link>                
                   <Box className="blogs-page_box_article-card_title">
-                    <h2 className="blogs-page_box_article-card_title_h2">
-                      {post.title}
-                    </h2>
                     <Box display={'flex'}>
                         <Box 
                           mr={'8px'}
@@ -66,14 +66,24 @@ export default function Blog({ posts }) {
                         {post.etiqueta}
                         </Box>
                       </Box>
+                      <Link key={post.slug} href={`blog/${post.slug}`}>
+                      <a>
+                        <h2 className="blogs-page_box_article-card_title_h2">
+                          {post.title}
+                        </h2>
+                      </a>
+                      </Link>
+                        <p className="blogs-page_box_article-card_title_parrafo">
+                          {post.subtitle}
+                        </p>
                       
                   </Box>
-                  
+                
                 </Box>
-              </a>
-            </Link>
+          </>
           ))}
         </Box>
+
         <Box className="blogs-page_newsletter">
           {" "}
           aqui la suscripcion y quien soy

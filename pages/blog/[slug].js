@@ -1,12 +1,15 @@
 import { MDXRemote } from "next-mdx-remote";
 import { getFileBySlug, getFiles } from "../../lib/mdx";
-
+import MDXComponents from "../../components/MDXComponents";
 import Layout from "../../components/Layout";
+import { Box } from "@chakra-ui/react";
 
 export default function Post({ source, frontmatter }) {
   return (
     <Layout>
-      <MDXRemote {...source} />
+      <Box className="container_articulo">
+        <MDXRemote {...source} components={MDXComponents} />
+      </Box>
     </Layout>
   );
 }

@@ -28,7 +28,7 @@ export default function Navbar() {
                 <Avatar
                   bg={"#4e77f9"}
                   size={"md"}
-                  src={"http://localhost:3000/img/avatar.png"}
+                  src={"https://1-nextjs-app.vercel.app/img/avatar.png"}
                 />
               </a>
             </Link>

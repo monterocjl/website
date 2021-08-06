@@ -23,6 +23,11 @@ h1 {
   font-weight: 900;
 }
 
+p {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -154,11 +159,11 @@ a:hover {
 }
 
 .woocommerce-icons {
-  font-size: 32px;
+  font-size: 21px;
 }
 
 .shopify-icons {
-  font-size: 24px;
+  font-size: 19px;
 }
 
 .servicios_card_description {
@@ -167,11 +172,11 @@ a:hover {
 }
 
 .mobilefirst-icons {
-  font-size: 23px;
+  font-size: 19px;
 }
 
 .ux-ui-icons {
-  font-size: 28px;
+  font-size: 19px;
 }
 
 /* Fin Servicios*/
@@ -185,26 +190,26 @@ a:hover {
 }
 
 .blogs-page_box {
-  width: 62%;
+  display: flex;
+  width: 68%;
   border-radius: 20px;
   margin-bottom: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .blogs-page_box_article-card {
-  display: flex;
-  justify-content: flex-start;
   border-radius: 20px;
-  width: 100%;
-  height: 130px;
+  width: 49%;
+  height: auto;
   margin-bottom: 20px;
   padding: 7px;
 }
 
 .blogs-page_box_article-card_img {
-  width: 116px;
-  height: auto;
-  border-radius: 20px;
-  margin-right: 5px;
+  width: 100%;
+  height: 145px;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
@@ -215,14 +220,18 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 9px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 12px;
+  margin-bottom: 20px;
 }
 
 .blogs-page_box_article-card_title_h2 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 24px;
-  margin-bottom: 7px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .blogs-page_box_article-card_title_fecha {
@@ -230,11 +239,11 @@ a:hover {
 }
 
 .blogs-page_newsletter {
-  width: 35%;
+  width: 30%;
   border-radius: 20px;
   padding: 25px;
   margin-bottom: 10px;
-  background: #592e92;
+  background: #2f436e;
 }
 
 @media (max-width: 767px) {
@@ -246,15 +255,26 @@ a:hover {
   .blogs-page_newsletter {
     width: 100%;
   }
-  .blogs-page_box_article-card {
-    height: 135px;
-  }
-  .blogs-page_box_article-card_img {
-    width: 96px;
-  }
+
   .blogs-page_box_article-card_title_h2 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
   }
 }
+
+@media (max-width: 550px) {
+  .blogs-page_box_article-card {
+    width: 100%;
+  }
+}
 /* Fin Blogs*/
+
+/* Artículos */
+.container_articulo {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 37px;
+}
+
+/* Fin Artículos */
