@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../../components/Layout";
 import { Image } from "@chakra-ui/react";
 import {
@@ -24,10 +25,11 @@ export default function Blog({ posts }) {
       <Box className="blog-page">
         <Box className="blogs-page_box">
           {posts.map((post) => (
-            <>
+       <React.Fragment key={post.slug}>
             
-                <Box
+                <Box 
                   className="blogs-page_box_article-card"
+
                   bg={colorMode === "dark" ? "#0b1c28" : "#f7fafc"}
                   boxShadow={
                     colorMode === "dark"
@@ -35,15 +37,16 @@ export default function Blog({ posts }) {
                       : "0 21px 23px -20px #004aa733"
                   }
                 >
-                  <Link key={post.slug} href={`blog/${post.slug}`}>
+                  <Link href={`/blog/${post.slug}`}>
                       <a>
                   <Image
                     className="blogs-page_box_article-card_img"
                     src={post.img}
                     alt="{post.title}"
                   ></Image>
-                  </a>
-                  </Link>                
+                      </a>
+                      </Link> 
+                                 
                   <Box className="blogs-page_box_article-card_title">
                     <Box display={'flex'}>
                         <Box 
@@ -66,21 +69,22 @@ export default function Blog({ posts }) {
                         {post.etiqueta}
                         </Box>
                       </Box>
-                      <Link key={post.slug} href={`blog/${post.slug}`}>
+                      <Link href={`/blog/${post.slug}`}>
                       <a>
                         <h2 className="blogs-page_box_article-card_title_h2">
                           {post.title}
                         </h2>
                       </a>
-                      </Link>
+                        </Link>
+
                         <p className="blogs-page_box_article-card_title_parrafo">
                           {post.subtitle}
                         </p>
                       
                   </Box>
-                
                 </Box>
-          </>
+                  </React.Fragment>
+
           ))}
         </Box>
 
@@ -95,7 +99,6 @@ export default function Blog({ posts }) {
 
 export async function getStaticProps() {
   const posts = await getAllFilesMetadata();
-  console.log(posts);
   return {
     props: { posts },
   };

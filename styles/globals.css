@@ -204,6 +204,11 @@ a:hover {
   height: auto;
   margin-bottom: 20px;
   padding: 7px;
+  transition: all 0.12s;
+}
+
+.blogs-page_box_article-card:hover {
+  color: none !important;
 }
 
 .blogs-page_box_article-card_img {
@@ -223,7 +228,7 @@ a:hover {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 12px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .blogs-page_box_article-card_title_h2 {

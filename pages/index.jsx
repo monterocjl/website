@@ -3,11 +3,13 @@ import { Button, Box } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import { getAllFilesMetadata } from "../lib/mdx";
-
 import Servicios from "../components/Servicios";
+import { motion } from "framer-motion";
 
 export default function Home({ posts }) {
+ 
   return (
+    <motion.div exit={{opacity: 0}} >
     <Layout
       title="Juan Montero - Desarrollador Web y Diseñador UX/UI"
       description="Desarrollador Web y Diseñador UX/UI"
@@ -34,12 +36,12 @@ export default function Home({ posts }) {
       <Servicios />
       <h1>Prueba final de que si se actualizan los cambios</h1>
     </Layout>
+    </motion.div>
   );
 }
 
 export async function getStaticProps() {
   const posts = await getAllFilesMetadata();
-  console.log(posts);
   return {
     props: { posts },
   };
