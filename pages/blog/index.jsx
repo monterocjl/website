@@ -1,18 +1,11 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { Image } from "@chakra-ui/react";
-import {
-  Box,
-  Center,
-  Heading,
-  Text,
-  Stack,
-  Avatar,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Center, Heading, Text, Stack, Avatar, useColorModeValue } from "@chakra-ui/react";
 import { getAllFilesMetadata } from "../../lib/mdx";
 import Link from "next/link";
 import { useColorMode } from "@chakra-ui/color-mode";
+import { motion } from "framer-motion";
 
 export default function Blog({ posts }) {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -20,6 +13,12 @@ export default function Blog({ posts }) {
     <Layout
       title="Juan Montero - Desarrollador Web y Diseñador UX/UI"
       description="Desarrollador Web y Diseñador UX/UI"
+    >
+      <motion.div 
+      key="modal"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <h1>Este es mi blog</h1>
       <Box className="blog-page">
@@ -93,6 +92,7 @@ export default function Blog({ posts }) {
           aqui la suscripcion y quien soy
         </Box>
       </Box>
+      </motion.div>
     </Layout>
   );
 }
