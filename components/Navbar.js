@@ -29,7 +29,6 @@ export default function Navbar() {
                   bg={"#4e77f9"}
                   size={"md"}
                   src={"https://1-nextjs-app.vercel.app/img/avatar.png"}
-                  alt="Juan Montero - Desarrollador Web y Diseñador UX/UI"
                 />
               </a>
             </Link>
