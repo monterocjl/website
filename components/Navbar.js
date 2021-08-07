@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import DarkModeSwitch from "./DarkModeSwitch";
 import { HamburgerIcon, CloseIcon, EmailIcon } from "@chakra-ui/icons";
+import { motion } from "framer-motion";
 
 import Link from "next/link";
 import { GrTwitter, GrInstagram } from "react-icons/gr";
@@ -23,16 +24,23 @@ export default function Navbar() {
       <Box px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack spacing={8} alignItems={"center"}>
-            <Link href="/">
-              <a>
-                <Avatar
-                  bg={"none"}
-                  size={"md"}
-                  src={"https://1-nextjs-app.vercel.app/img/avatar.png"}
-                  name="Juan Montero - Desarrollador Web y Diseñador UX/UI"
-                />
-              </a>
-            </Link>
+            <motion.div
+              key="modal"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <Link href="/">
+                <a>
+                  <Avatar
+                    bg={"none"}
+                    size={"md"}
+                    src={"https://1-nextjs-app.vercel.app/img/avatar.png"}
+                    name="Juan Montero - Desarrollador Web y Diseñador UX/UI"
+                  />
+                </a>
+              </Link>
+            </motion.div>
           </HStack>
 
           <Flex alignItems={"center"}>
