@@ -11,7 +11,6 @@ export default function Layout({ children, title, description }) {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon-jm.svg" />
       </Head>
-
       <Stack as="main" mx="auto" mt="10px">
         <Navbar />
 

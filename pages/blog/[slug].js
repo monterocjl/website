@@ -3,13 +3,21 @@ import { getFileBySlug, getFiles } from "../../lib/mdx";
 import MDXComponents from "../../components/MDXComponents";
 import Layout from "../../components/Layout";
 import { Box } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 export default function Post({ source, frontmatter }) {
   return (
     <Layout>
-      <Box className="container_articulo">
-        <MDXRemote {...source} components={MDXComponents} />
-      </Box>
+      <motion.div
+        key="modal"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <Box className="container_articulo">
+          <MDXRemote {...source} components={MDXComponents} />
+        </Box>
+      </motion.div>
     </Layout>
   );
 }
