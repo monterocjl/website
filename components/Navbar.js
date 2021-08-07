@@ -1,7 +1,7 @@
+import Image from "next/image";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Icon,
   IconButton,
@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 import DarkModeSwitch from "./DarkModeSwitch";
 import { HamburgerIcon, CloseIcon, EmailIcon } from "@chakra-ui/icons";
-import Image from "next/image";
 
 import Link from "next/link";
 import { GrTwitter, GrInstagram } from "react-icons/gr";
@@ -29,6 +28,7 @@ export default function Navbar() {
                 <Image
                   width={"48px"}
                   height={"48px"}
+                  priority
                   src="/img/avatar.png"
                   alt="Juan Montero"
                 />
