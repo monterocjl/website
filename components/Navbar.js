@@ -26,7 +26,7 @@ export default function Navbar() {
             <Link href="/">
               <a>
                 <Avatar
-                  bg={"#4e77f9"}
+                  bg={"none"}
                   size={"md"}
                   src={"https://1-nextjs-app.vercel.app/img/avatar.png"}
                   name="Juan Montero - Desarrollador Web y Diseñador UX/UI"
