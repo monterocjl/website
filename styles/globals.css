@@ -120,7 +120,7 @@ a:hover {
 .servicios_card {
   width: 47%;
   border-radius: 20px;
-  padding: 25px;
+  padding: 25px 25px 15px 25px;
   margin-bottom: 33px;
 }
 
