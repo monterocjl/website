@@ -72,6 +72,7 @@ export default function PaginaWebServicio() {
               borderWidth={colorMode === "dark" ? "4px" : "4px"}
               borderColor={"#4e77f9"}
               borderRadius={'20px'}
+              
             >
               <ModalHeader fontSize={"2xl"}>Página Web</ModalHeader>
               <ModalCloseButton fontSize={"md"} color={"#4e77f9"} />

@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { Image } from "@chakra-ui/react";
-import { Box, Center, Heading, Text, Stack, Avatar, useColorModeValue } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import { getAllFilesMetadata } from "../../lib/mdx";
 import Link from "next/link";
 import { useColorMode } from "@chakra-ui/color-mode";
@@ -20,7 +20,15 @@ export default function Blog({ posts }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <h1>Este es mi blog</h1>
+      <Heading
+        as="h1"
+        fontSize={["30px", "40px"]}
+        fontWeight={"bold"}
+        mt={12}
+        textAlign={"center"}
+      >
+        Este es mi blog
+      </Heading>
       <Box className="blog-page">
         <Box className="blogs-page_box">
           {posts.map((post) => (
@@ -41,7 +49,7 @@ export default function Blog({ posts }) {
                   <Image
                     className="blogs-page_box_article-card_img"
                     src={post.img}
-                    alt="{post.title}"
+                    alt={post.title}
                   ></Image>
                       </a>
                       </Link> 
@@ -82,7 +90,7 @@ export default function Blog({ posts }) {
                       
                   </Box>
                 </Box>
-                  </React.Fragment>
+          </React.Fragment>
 
           ))}
         </Box>

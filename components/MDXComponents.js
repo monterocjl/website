@@ -4,25 +4,21 @@
 import { Heading, Text } from "@chakra-ui/react";
 
 export default {
-  h1: (props) => (
-    <Heading
-      as="h1"
-      fontSize={["30px", "40px"]}
-      fontWeight={"bold"}
-      mb={8}
-      {...props}
-    />
-  ),
-
   h2: (props) => (
     <Heading
       as="h2"
       fontSize={["20px", "25px"]}
       fontWeight={"600"}
-      mb={2}
+      mb={1}
+      mt={7}
       {...props}
     />
   ),
 
-  p: (props) => <Text fontSize={["18px", "21px"]} {...props} />,
+  p: (props) => (
+    <Text 
+      fontSize={["17px", "20px"]}
+      mb={'6'}
+      {...props} 
+    />),
 };

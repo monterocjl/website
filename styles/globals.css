@@ -186,7 +186,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 65px;
+  margin-top: 40px;
 }
 
 .blogs-page_box {
@@ -275,11 +275,17 @@ a:hover {
 /* Fin Blogs*/
 
 /* Artículos */
-.container_articulo {
+.container_articulo{
   max-width: 700px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 37px;
+  margin-top: 45px;
 }
 
+.articulo-image {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  object-fit: cover;
+}
 /* Fin Artículos */

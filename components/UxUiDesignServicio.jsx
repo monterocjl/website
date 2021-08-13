@@ -2,14 +2,10 @@ import { Button, Box, Icon, UnorderedList, ListItem } from "@chakra-ui/react";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { useDisclosure } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { BiDesktop } from "react-icons/bi";
-import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton } from "@chakra-ui/react";
 
 export default function UxUiDesignServicio() {
   const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
   return (
 
 <Box
