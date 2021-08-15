@@ -12,7 +12,7 @@ body {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 1000px;
   background: var(--bg-dark);
   color: var(--text-color-dark);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -186,7 +186,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 40px;
 }
 
 .blogs-page_box {
@@ -199,12 +198,12 @@ a:hover {
 }
 
 .blogs-page_box_article-card {
-  border-radius: 20px;
   width: 49%;
   height: auto;
   margin-bottom: 20px;
   padding: 7px;
   transition: all 0.12s;
+
 }
 
 .blogs-page_box_article-card:hover {
@@ -214,7 +213,6 @@ a:hover {
 .blogs-page_box_article-card_img {
   width: 100%;
   height: 145px;
-  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
@@ -245,17 +243,11 @@ a:hover {
 
 .blogs-page_newsletter {
   width: 30%;
-  border-radius: 20px;
-  padding: 25px;
-  margin-bottom: 10px;
-  background: #2f436e;
 }
 
 @media (max-width: 767px) {
-  .blog-page {
-    flex-direction: column;
-    align-items: center;
-  }
+
+  
   .blogs-page_box,
   .blogs-page_newsletter {
     width: 100%;
@@ -270,6 +262,9 @@ a:hover {
 @media (max-width: 550px) {
   .blogs-page_box_article-card {
     width: 100%;
+  }
+  .blogs-page_box_article-card {
+    min-height: 165px;
   }
 }
 /* Fin Blogs*/

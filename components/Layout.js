@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Stack, HStack, Icon } from "@chakra-ui/react";
+import { Stack, HStack, Icon, Box } from "@chakra-ui/react";
 import Navbar from "./Navbar";
 import { GrTwitter, GrInstagram } from "react-icons/gr";
 
@@ -14,7 +14,17 @@ export default function Layout({ children, title, description }) {
       <Stack as="main" mx="auto" mt="10px">
         <Navbar />
 
-        <main className="container-principal">{children}</main>
+        <main
+         className="container-principal"
+        >
+          <Box 
+            ml={'auto'}
+            mr={'auto'}
+            maxWidth={'800px'}
+          >
+            {children}
+          </Box>
+        </main>
 
         <HStack
           as={"footer"}

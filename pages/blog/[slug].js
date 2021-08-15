@@ -25,7 +25,7 @@ export default function Post({ source, frontmatter: { title, img, etiqueta, date
             display={'flex'}
             color={colorMode === 'dark' ? 'white' : '#091721'}
             bg={colorMode === 'dark' ? '#4e77f9' : '#c9d1ec'}
-            borderRadius="xl"
+            borderRadius="5px"
             px={3}
             fontSize={'12px'}
             width={'fit-content'}

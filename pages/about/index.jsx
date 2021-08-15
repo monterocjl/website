@@ -20,9 +20,7 @@ export default function About() {
       exit={{ opacity: 0 }}
     >
       <Box
-        maxWidth={'800px'}
-        ml={'auto'}
-        mr={'auto'}
+
         pl={1}
         pr={1}
       >
