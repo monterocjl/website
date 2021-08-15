@@ -47,7 +47,7 @@ export default function Navbar() {
                 <a className="navbar-titles">Inicio</a>
               </Link>
               <Link href="/about">
-                <a className="navbar-titles">Sobre mi</a>
+                <a className="navbar-titles">Sobre mí</a>
               </Link>
 
               <Link href="/portafolio">
@@ -97,7 +97,7 @@ export default function Navbar() {
               </Link>
 
               <Link href="/about">
-                <a className="navbar-titles">Sobre mi</a>
+                <a className="navbar-titles">Sobre mí</a>
               </Link>
 
               <Link href="/portafolio">

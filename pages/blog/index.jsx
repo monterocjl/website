@@ -59,14 +59,14 @@ export default function Blog({ posts }) {
                         <Box 
                           mr={'8px'}
                           color={colorMode === 'dark' ? '#4e77f9' : '#757575'}
-                          fontSize={'15px'}
+                          fontSize={'13px'}
                         >
                           <p className="blogs-page_box_article-card_title_fecha font-for-parrafos">{post.date} • </p>
                         </Box>
                         <Box className=''
                           display={'flex'}
                           color={colorMode === 'dark' ? 'white' : '#091721'}
-                          bg={colorMode === 'dark' ? '#4e77f9' : '#e2e8f0'}
+                          bg={colorMode === 'dark' ? '#4e77f9' : '#c9d1ec'}
                           borderRadius="xl"
                           px={3}
                           fontSize={'12px'}

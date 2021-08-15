@@ -1,6 +1,6 @@
 import EcommerceServicio from "./EcommerceServicio";
 import PaginaWebServicio from "./PaginaWebServicio";
-import UxUiDesignServicio from "./UxUiDesignServicio";
+import UXUI from "./UXUI";
 
 export default function CollapseEx() {
   return (
@@ -9,7 +9,7 @@ export default function CollapseEx() {
       <div className="servicios">
         <EcommerceServicio />
         <PaginaWebServicio />
-        <UxUiDesignServicio />
+        <UXUI />
       </div>
     </>
   );

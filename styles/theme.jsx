@@ -5,7 +5,7 @@ const styles = {
   global: props => ({
     body: {
       color: mode('#091721', 'whiteAlpha.900')(props),
-      bg: mode('gray.200', '#091721')(props),
+      bg: mode('#e2e8f0ad', '#091721')(props),
       mx: 'auto',
       
     },
@@ -37,11 +37,12 @@ const textStyles = {
       lineHeight: "110%",
       letterSpacing: "-1%",
     },
+
  };
 
 
 const fonts = {
-  body: "Raleway, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+  body: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
 }
 
 const theme = extendTheme({

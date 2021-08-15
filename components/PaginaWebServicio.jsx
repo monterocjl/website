@@ -1,4 +1,4 @@
-import { Button, Box, Icon, UnorderedList, ListItem } from "@chakra-ui/react";
+import { Button, Box, Icon, UnorderedList, ListItem, Code } from "@chakra-ui/react";
 import { FaMobile } from "react-icons/fa";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { useDisclosure } from "@chakra-ui/react";
@@ -16,29 +16,18 @@ export default function PaginaWebServicio() {
           className="servicios_card"
           bg={colorMode === "dark" ? "#0d2231" : "#f7fafc"}
           borderWidth={colorMode === "dark" ? "0px" : "1px"}
-          borderColor={colorMode === "dark" ? "none" : "#091721"}
         >
           <div className="servicios_card_title">
             <h2>Página Web</h2>
           </div>
-          <div className="icons_shopify_woocommerce">
-            <Box
-              className="flex-icons_shopify_woocommerce"
-              borderWidth={colorMode === "dark" ? "1px" : "0px"}
-              color={colorMode === "dark" ? "purple.500" : "white"}
-              bg={colorMode === "dark" ? "none" : "purple.500"}
-              borderColor={"purple.500"}
-              borderRadius="xl"
-              mb={2}
-              px={3}
-              py={"2px"}
-              mr={3}
-              fontSize={"13px"}
-            >
-              <Icon mr={2} className="mobilefirst-icons" as={FaMobile} />
-              <h4>Mobile first</h4>
-            </Box>
-          </div>
+          <Box className="icons_shopify_woocommerce">
+
+            <Code fontSize={'13px'} mr={3} display={'flex'} fontWeight={'600'} bg={colorMode === "dark" ? "#4e77f9" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>
+               <Icon fontSize={'17px'} mr={2} className="mobilefirst-icons" as={FaMobile} />
+                Mobile first
+            </Code>
+          </Box>
+          
           <h2 className="servicios_card_description">
             Hoy en día, todo negocio debería tener su propia página web. Sea
             B2B, B2C, marca personal o empresarial, tus clientes querrán saber

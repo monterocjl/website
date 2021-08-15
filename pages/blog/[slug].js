@@ -22,9 +22,15 @@ export default function Post({ source, frontmatter: { title, img, etiqueta, date
       >
         <Box className="container_articulo">
           <Box
-            color={colorMode === 'dark' ? '#4e77f9' : '#4e77f9'}
-            fontSize={['13px', '16px']}
-            fontWeight={'bold'}
+            display={'flex'}
+            color={colorMode === 'dark' ? 'white' : '#091721'}
+            bg={colorMode === 'dark' ? '#4e77f9' : '#c9d1ec'}
+            borderRadius="xl"
+            px={3}
+            fontSize={'12px'}
+            width={'fit-content'}
+            alignItems={'center'}
+            fontWeight={"bold"}
             mb={3}
           >
             { etiqueta }
@@ -42,9 +48,9 @@ export default function Post({ source, frontmatter: { title, img, etiqueta, date
             { title }
           </Heading>
           <Box
-            color={colorMode === 'dark' ? '#4e77f9' : '#4e77f9'}
+            
             fontSize={['13px', '16px']}
-            fontWeight={'bold'}
+            fontWeight={'500'}
             mb={5}
           >
             { date }  |  por Juan Montero
