@@ -66,7 +66,7 @@ export default function EcommerceServicio() {
             <ModalContent
               bg={colorMode === "dark" ? "#0d2231" : "#f7fafc"}
               borderWidth={colorMode === "dark" ? "4px" : "4px"}
-              borderColor={"#4e77f9"}
+              borderColor={colorMode === "dark" ? "#4e77f9" : "#c9d1ecv"}
               borderRadius={'20px'}
             >
               <ModalHeader fontSize={"2xl"}>E-commerce</ModalHeader>

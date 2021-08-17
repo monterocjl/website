@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { Image } from "@chakra-ui/react";
-import { Box, Heading, Text, Code } from "@chakra-ui/react";
+import { Box, Heading, Text, Code, Image } from "@chakra-ui/react";
 import { getAllFilesMetadata } from "../../lib/mdx";
 import Link from "next/link";
 import { useColorMode } from "@chakra-ui/color-mode";
@@ -55,22 +54,19 @@ export default function Blog({ posts }) {
                   className="blogs-page_box_article-card"
                   borderRadius={'10px'}
                   bg={colorMode === "dark" ? "#0d2231" : "#f7fafc"}
-                  boxShadow={
-                    colorMode === "dark"
-                      ? "none"
-                      : "0 21px 23px -20px #004aa733"
+                  boxShadow={ colorMode === "dark" ? "none" : "0 21px 23px -20px #004aa733"
                   }
                 >
                   <Link href={`/blog/${post.slug}`}>
-                      <a>
-                  <Image
-                    className="blogs-page_box_article-card_img"
-                    borderRadius={'10px 10px 0px 0px'}
-                    src={post.img}
-                    alt={post.title}
-                  ></Image>
-                      </a>
-                      </Link>
+                    <a>
+                      <Image
+                        className="blogs-page_box_article-card_img"
+                        borderRadius={'10px 10px 0px 0px'}
+                        src={post.img}
+                        alt={post.title}
+                      />
+                    </a>
+                  </Link>
 
                   <Box className="blogs-page_box_article-card_title">
                     <Box display={'flex'}>

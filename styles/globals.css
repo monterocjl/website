@@ -294,3 +294,12 @@ a:hover {
   margin-right: auto;
   max-width: 100%;
 }
+
+/* Proyectos*/
+
+.proyecto-image {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  object-fit: contain;
+}

@@ -74,7 +74,6 @@ export default function Post({ source, frontmatter: { title, img, etiqueta, date
 
 export async function getStaticProps({ params }) {
   const { source, frontmatter } = await getFileBySlug(params.slug);
-  console.log({ source, frontmatter })
   return {
     props: { source, frontmatter },
   };

@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { Stack, HStack, Icon, Box } from "@chakra-ui/react";
 import Navbar from "./Navbar";
-import { GrTwitter, GrInstagram } from "react-icons/gr";
+
+import Footer from "./Footer";
 
 export default function Layout({ children, title, description }) {
   return (
@@ -26,22 +27,9 @@ export default function Layout({ children, title, description }) {
           </Box>
         </main>
 
-        <HStack
-          as={"footer"}
-          spacing={5}
-          justifyContent={"center"}
-          alignItems={"center"}
-          pt={20}
-          pb={10}
-        >
-          <a href="https://twitter.com" target="_blank" rel="noreferrer">
-            <Icon as={GrTwitter} />
-          </a>
+        <Footer/>
 
-          <a href="https://twitter.com" target="_blank" rel="noreferrer">
-            <Icon as={GrInstagram} />
-          </a>
-        </HStack>
+        
       </Stack>
     </>
   );

@@ -25,7 +25,7 @@ export default function About() {
         mt={12}
         textAlign={"center"}
       >
-        Blog
+        Contacto
       </Heading>
 
       <Box
