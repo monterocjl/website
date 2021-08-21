@@ -93,7 +93,7 @@ export default function ProyectoViabler() {
             🛒
             </Text>
             <Text fontSize={'1.1rem'} mb={1}>
-            El desarrollo del marketplace se llevó a cabo en Wordpress.
+            El desarrollo del marketplace lo llevé a cabo en Wordpress.
             </Text>
           </Box>
         </Box>

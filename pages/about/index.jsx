@@ -51,11 +51,10 @@ export default function About() {
         <Divider borderColor={colorMode === "dark" ? "#4c606f" : "#afbdd0"} mb={5} />
           <Box>
             <Text fontSize={'1.1rem'} mb={4}>
-              Soy un desarrollador web con más de <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>
-              2 años de experiencia.</Code>
+              Desarrollo mis proyectos siempre enfocados en <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>la experiencia del usuario</Code>, <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>la usabilidad</Code> y <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>el diseño.</Code>
             </Text>
             <Text fontSize={'1.1rem'} mb={4}>
-              Desarrollo mis proyectos siempre enfocados en <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>la experiencia del usuario</Code>, <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>la usabilidad</Code> y <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>el diseño.</Code>
+            Tengo espíritu <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>emprendedor</Code> y a parte del desarrollo web, también me mantengo en constante aprendizaje sobre <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>negocios</Code> y el desarrollo de <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>productos digitales</Code>.
             </Text>
           </Box>
 
@@ -72,7 +71,7 @@ export default function About() {
         <Divider borderColor={colorMode === "dark" ? "#4c606f" : "#afbdd0"} mb={5} />
         
         <UnorderedList pl={2} spacing={2}>
-          <ListItem fontSize={'1.1rem'} >Desarrollo centrado en UX/UI.</ListItem>
+          <ListItem fontSize={'1.1rem'} >Desarrollo centrado en la experiencia del usuario.</ListItem>
           <ListItem fontSize={'1.1rem'} >Aprendizaje continuo.</ListItem>
           <ListItem fontSize={'1.1rem'} >Creatividad.</ListItem>
           <ListItem fontSize={'1.1rem'} >Trabajo en equipo.</ListItem>
@@ -174,7 +173,7 @@ export default function About() {
             Mi siguiente paso fue capacitarme en <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>UX/UI Design</Code> y en las metodologías necesarias para crear productos digitales <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>centrados en el usuario.</Code>
             </Text>
             <Text fontSize={'1.1rem'} mb={4}>
-            Y desde hace 2 años tomé la decisión de sumergirme en el <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>
+            Y desde hace 1 año tomé la decisión de sumergirme en el <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>
             desarrollo web.</Code>
             </Text>
         </Box>
@@ -247,7 +246,7 @@ export default function About() {
               🤙
             </Text>
             <Text fontSize={'1.1rem'} mb={1}>
-              Gracias por haber llegado hasta aquí. Si quieres contactarme, puedes hacerlo <Link href='/contacto'><a><Code fontWeight={'600'} bg={'#4e77f9'} color={"white"} p={'.2em .4em'} borderRadius={'5px'}>aquí</Code></a></Link>.
+              Gracias por haber leído un poco más sobre mí. Si quieres contactarme, puedes hacerlo <Link href='/contacto'><a><Code fontWeight={'600'} bg={'#4e77f9'} color={"white"} p={'.2em .4em'} borderRadius={'5px'}>aquí</Code></a></Link>.
             </Text>
           </Box>
         </Box>
