@@ -45,7 +45,7 @@ export default function Footer() {
                 </Box>
 
                 <Box mr={3}>
-                <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/monterocjl/" target="_blank" rel="noreferrer">
                 <Icon as={GrLinkedinOption} />
                 </a>
                 </Box>
