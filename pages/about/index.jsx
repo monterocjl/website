@@ -209,7 +209,7 @@ export default function About() {
               📷
             </Text>
             <Text fontSize={'1.1rem'} mb={4}>
-              Me apasiona la fotografía y siento que es mi forma de crear arte.
+              Me apasiona la fotografía. La concibo como mi forma de crear arte.
             </Text>
           </Box>
 

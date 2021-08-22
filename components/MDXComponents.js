@@ -7,8 +7,8 @@ export default {
   h2: (props) => (
     <Heading
       as="h2"
-      fontSize={["20px", "25px"]}
-      fontWeight={"600"}
+      fontSize={["20px", "23px"]}
+      fontWeight={"700"}
       mb={1}
       mt={7}
       {...props}
