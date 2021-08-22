@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GrTwitter, GrInstagram, GrGithub, GrLinkedinOption } from "react-icons/gr";
+import { GrTwitter, GrInstagram, GrGithub, GrLinkedinOption, GrMedium } from "react-icons/gr";
 import { Box, Heading, Text, Code, Image, HStack, Icon,} from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/color-mode";
 
@@ -29,7 +29,7 @@ export default function Footer() {
                 p={'10px 15px'}
                 borderRadius={'10px'}
             >
-                <Text as={'h5'} mr={5}>
+                <Text as={'h5'} mr={4}>
                     Date una vuelta 👉
                 </Text>
                 <Box mr={3}>
@@ -50,9 +50,15 @@ export default function Footer() {
                 </a>
                 </Box>
 
-                <Box>
+                <Box mr={3}>
                 <a href="https://www.instagram.com/crecimiento.digital_/" target="_blank" rel="noreferrer">
                 <Icon as={GrInstagram} />
+                </a>
+                </Box>
+
+                <Box >
+                <a href="https://medium.com/@juan.montero." target="_blank" rel="noreferrer">
+                <Icon as={GrMedium} />
                 </a>
                 </Box>
                              
