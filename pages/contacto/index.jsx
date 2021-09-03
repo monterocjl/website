@@ -41,7 +41,7 @@ export default function About() {
             📰
           </Text>
           <Text fontSize={'1.1rem'} mb={1}>
-          Si quieres contratar mis servicios, tienes algún proyecto en mente o tienes alguna, envíame un mensaje llenando el siguiente <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>formulario 👇</Code> y me contactaré contigo lo más pronto posible.
+          Si quieres contratar mis servicios, tienes algún proyecto en mente o tienes alguna consulta, envíame un mensaje llenando el siguiente <Code fontWeight={'600'} bg={colorMode === "dark" ? "#193548" : "#c9d1ec"} p={'.2em .4em'} borderRadius={'5px'}>formulario 👇</Code> y me contactaré contigo lo más pronto posible.
           </Text>
         </Box>
       </Box>
