@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Layout from "../components/Layout";
 import { Button, Box } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
@@ -7,6 +8,12 @@ import Servicios from "../components/Servicios";
 import { motion } from "framer-motion";
 
 export default function Home({ posts }) {
+
+  const [language, setLanguage] = useState(true)
+
+  function toggleLanguage () {
+    setLanguage(!language)
+  }
  
   return (
     <Layout
@@ -19,26 +26,20 @@ export default function Home({ posts }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="container-titulo">
-        <h2 className="titulo1-home">Hola 👋, soy Juan Montero</h2>
-        <h1 className="titulo-home">Desarrollador Web y Diseñador UX/UI</h1>
-      </div>
-      <div className="tag-container">
-        <Link href='/blog'><a>
-        <Button
-          variant={"outline"}
-          borderColor={"#4e77f9"}
-          color={"#4e77f9"}
-          size={"sm"}
-          mr={4}
-          rightIcon={<ArrowForwardIcon />}
-        >
-          Ver blog
-        </Button>
-        </a></Link>
-
-      </div>
-
+      <Box className="container-titulo" pt={12} >
+        {
+          language ? 
+          <>
+            <h2 className="titulo1-home">Hola 👋, soy Juan Montero</h2>
+            <h1 className="titulo-home">Desarrollador Web y Diseñador UI</h1>
+          </>
+          :
+          <>
+            <h2 className="titulo1-home">Hi 👋, I&apos;m Juan Montero</h2>
+            <h1 className="titulo-home">Web developer and UI Designer</h1>
+          </>
+        }
+      </Box>
       <Servicios />
       </motion.div>
     </Layout>

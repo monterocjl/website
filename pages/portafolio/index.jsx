@@ -23,6 +23,7 @@ export default function About() {
         fontSize={["30px", "40px"]}
         fontWeight={"bold"}
         mt={12}
+        pt={12}
         textAlign={"center"}
       >
         Portafolio

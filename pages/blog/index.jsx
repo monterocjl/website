@@ -23,6 +23,7 @@ export default function Blog({ posts }) {
         as="h1"
         fontSize={["30px", "40px"]}
         fontWeight={"bold"}
+        pt={12}
         mt={12}
         textAlign={"center"}
       >

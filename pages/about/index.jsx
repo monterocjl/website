@@ -20,7 +20,7 @@ export default function About() {
       exit={{ opacity: 0 }}
     >
       <Box
-
+        pt={12}
         pl={1}
         pr={1}
       >
