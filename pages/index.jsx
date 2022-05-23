@@ -1,19 +1,13 @@
 import { useState } from "react";
 import Layout from "../components/Layout";
 import { Button, Box } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import Link from "next/link";
 import { getAllFilesMetadata } from "../lib/mdx";
 import AboutMe from "../components/AboutMe";
 import { motion } from "framer-motion";
+import useLanguage from "../hooks/useLanguage";
 
 export default function Home({ posts }) {
-  const [language, setLanguage] = useState(true);
-
-  function toggleLanguage() {
-    setLanguage(!language);
-  }
-
+  const { language } = useLanguage();
   return (
     <Layout
       title='Juan Montero - Desarrollador Web y Diseñador UX/UI'
@@ -28,10 +22,8 @@ export default function Home({ posts }) {
         <Box className='container-titulo' pt={12}>
           {language ? (
             <>
-              <Box fontSize='40px' className='titulo1-home'>
-                Hola 👋, soy Juan Montero
-              </Box>
-              {/* <h1 className='titulo-home'>Desarrollador Web y Diseñador UI</h1> */}
+              <h2 className='titulo1-home'>Hola 👋, Soy Juan Montero</h2>
+              <h1 className='titulo-home'>Desarrollador Web y Diseñador UI</h1>
             </>
           ) : (
             <>

@@ -7,16 +7,24 @@ import {
   IconButton,
   Button,
   useDisclosure,
+  useColorMode,
   Stack,
 } from "@chakra-ui/react";
 import DarkModeSwitch from "./DarkModeSwitch";
 import { HamburgerIcon, CloseIcon, EmailIcon } from "@chakra-ui/icons";
-
 import Link from "next/link";
 import { GrTwitter, GrInstagram } from "react-icons/gr";
+import useLanguage from "../hooks/useLanguage";
 
 export default function Navbar() {
+  const { colorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const { language, setLanguage } = useLanguage();
+
+  function toggleLanguage() {
+    setLanguage((prevState) => !prevState);
+  }
 
   return (
     <>
@@ -29,6 +37,7 @@ export default function Navbar() {
         w='100%'
         top='0'
         maxW='1000px'
+        backgroundColor={colorMode === "dark" ? "'#09172152'" : "#ebeff421"}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack spacing={8} alignItems={"center"}>
@@ -83,6 +92,19 @@ export default function Navbar() {
             </Link> */}
 
             <DarkModeSwitch />
+            <Button
+              size={"sm"}
+              borderWidth={colorMode === "dark" ? "1px" : "none"}
+              bg={colorMode === "dark" ? "none" : "#4e77f9"}
+              borderColor={"#4e77f9"}
+              color={colorMode === "dark" ? "#4e77f9" : "white"}
+              onClick={toggleLanguage}
+              transition='all 0.3s cubic-bezier(.08,.52,.52,1)'
+              _hover={{ filter: "brightness(1.1)" }}
+              ml={4}
+            >
+              {language ? "English" : "Spanish"}
+            </Button>
 
             <IconButton
               size={"sm"}
@@ -103,10 +125,6 @@ export default function Navbar() {
             <Stack as={"nav"} spacing={4}>
               <Link href='/'>
                 <a className='navbar-titles'>Inicio</a>
-              </Link>
-
-              <Link href='/about'>
-                <a className='navbar-titles'>Sobre mí</a>
               </Link>
 
               <Link href='/portafolio'>

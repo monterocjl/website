@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Box,
@@ -14,9 +13,12 @@ import {
 } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { MdCheckCircle, MdInfoOutline } from "react-icons/md";
+import useLanguage from "../hooks/useLanguage";
 
 export default function AboutMe() {
   const { colorMode } = useColorMode();
+  const { language } = useLanguage();
+
   return (
     <>
       <motion.div
@@ -42,7 +44,9 @@ export default function AboutMe() {
             />
             <Box>
               <Text fontSize={"1.1rem"} mb={4}>
-                En cada proyecto que desarrollo, siempre tengo en cuenta
+                {language
+                  ? "En cada proyecto que desarrollo, siempre tengo en cuenta"
+                  : "In all my projects I have in mind the"}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
@@ -50,7 +54,7 @@ export default function AboutMe() {
                   borderRadius={"5px"}
                   ml={1}
                 >
-                  la experiencia del usuario
+                  {language ? "la experiencia del usuario" : "user experience"}
                 </Code>
                 ,{" "}
                 <Code
@@ -59,20 +63,23 @@ export default function AboutMe() {
                   p={".2em .4em"}
                   borderRadius={"5px"}
                 >
-                  la usabilidad
+                  {language ? "la usabilidad" : "usability"}
                 </Code>{" "}
-                y{" "}
+                {language ? "y" : "and"}{" "}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
                   p={".2em .4em"}
                   borderRadius={"5px"}
                 >
-                  el diseño.
+                  {language ? "el diseño" : "design"}
                 </Code>
+                .
               </Text>
               <Text fontSize={"1.1rem"} mb={4}>
-                Por otro lado, me gusta mucho todo lo que tenga que ver con
+                {language
+                  ? "Por otro lado, me gusta mucho todo lo que tenga que ver con"
+                  : "I really like everything about "}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
@@ -80,9 +87,9 @@ export default function AboutMe() {
                   borderRadius={"5px"}
                   ml={1}
                 >
-                  emprendimiento
+                  {language ? "emprendimiento" : "entrepreneurship"}
                 </Code>
-                , sobretodo el ecosistema de{" "}
+                {language ? ", sobretodo el ecosistema de" : ""}{" "}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
@@ -92,7 +99,7 @@ export default function AboutMe() {
                 >
                   startups
                 </Code>{" "}
-                y la creación de
+                {language ? "y la creación de" : "ecosystem and "}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
@@ -100,10 +107,11 @@ export default function AboutMe() {
                   borderRadius={"5px"}
                   ml={1}
                 >
-                  producto
+                  {language ? "producto" : "product"}
                 </Code>
-                . Es por eso que, me mantengo en constante aprendizaje sobre el
-                desarrollo de
+                {language
+                  ? ". Es por eso que, me mantengo en constante aprendizaje sobre el desarrollo de"
+                  : "design. That is why I am constantly learning about"}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
@@ -111,7 +119,7 @@ export default function AboutMe() {
                   borderRadius={"5px"}
                   ml={1}
                 >
-                  negocios
+                  {language ? "negocios" : "business"}
                 </Code>
                 .
               </Text>
@@ -134,14 +142,26 @@ export default function AboutMe() {
 
             <UnorderedList pl={2} spacing={2}>
               <ListItem fontSize={"1.1rem"}>
-                Desarrollo centrado en la experiencia del usuario.
+                {language
+                  ? "Desarrollo centrado en la experiencia del usuario."
+                  : "Development focused on the user experience."}
               </ListItem>
-              <ListItem fontSize={"1.1rem"}>Aprendizaje continuo.</ListItem>
-              <ListItem fontSize={"1.1rem"}>Creatividad.</ListItem>
-              <ListItem fontSize={"1.1rem"}>Trabajo en equipo.</ListItem>
-              <ListItem fontSize={"1.1rem"}>Proactividad.</ListItem>
               <ListItem fontSize={"1.1rem"}>
-                Escribir y comunicar ideas.
+                {language ? "Aprendizaje continuo." : "Continuous learning."}
+              </ListItem>
+              <ListItem fontSize={"1.1rem"}>
+                {language ? "Creatividad." : "Creativity."}
+              </ListItem>
+              <ListItem fontSize={"1.1rem"}>
+                {language ? "Trabajo en equipo." : "Work team."}
+              </ListItem>
+              <ListItem fontSize={"1.1rem"}>
+                {language ? "Proactividad." : "Proactivity."}
+              </ListItem>
+              <ListItem fontSize={"1.1rem"}>
+                {language
+                  ? "Escribir y comunicar ideas."
+                  : "Write and communicate ideas."}
               </ListItem>
             </UnorderedList>
 
@@ -152,7 +172,7 @@ export default function AboutMe() {
               mb={2}
               mt={10}
             >
-              👨‍🚀 Tecnologías
+              👨‍🚀 {language ? "Tecnologías" : "Technologies"}
             </Heading>
             <Box
               bg={colorMode === "dark" ? "#0d2231" : "#f4f9ff"}
@@ -176,7 +196,7 @@ export default function AboutMe() {
               mb={2}
               mt={8}
             >
-              ⚙️ Herramientas
+              ⚙️ {language ? "Herramientas" : "Tools"}
             </Heading>
             <Box
               bg={colorMode === "dark" ? "#0d2231" : "#f4f9ff"}
@@ -210,7 +230,9 @@ export default function AboutMe() {
               <List>
                 <ListItem fontSize={"1.1rem"}>
                   <ListIcon as={MdCheckCircle} color='#4e77f9' />
-                  Wordpress / Woocommerce y Shopify.
+                  {language
+                    ? "Wordpress / Woocommerce y Shopify."
+                    : "Wordpress / Woocommerce and Shopify."}
                 </ListItem>
               </List>
             </Box>
@@ -222,7 +244,7 @@ export default function AboutMe() {
               mb={2}
               mt={"52px"}
             >
-              📋 Un poco más sobre mí
+              📋 {language ? "Un poco más sobre mí" : "More about me"}
             </Heading>
 
             <Divider
@@ -232,19 +254,25 @@ export default function AboutMe() {
 
             <Box>
               <Text fontSize={"1.1rem"} mb={4}>
-                Inicié mi vida profesional en el{" "}
+                {language
+                  ? "Inicié mi vida profesional en el"
+                  : "I started my professional life in"}{" "}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
                   p={".2em .4em"}
                   borderRadius={"5px"}
                 >
-                  diseño
+                  {language ? "diseño" : "design"}
                 </Code>
-                , creando piezas gráficas para distintas empresas.
+                {language
+                  ? ", creando piezas gráficas para distintas empresas."
+                  : ", creating graphic pieces for different companies."}
               </Text>
               <Text fontSize={"1.1rem"} mb={4}>
-                Mi siguiente paso fue capacitarme en{" "}
+                {language
+                  ? "Mi siguiente paso fue capacitarme en"
+                  : "My next step was to train myself in"}{" "}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
@@ -253,30 +281,36 @@ export default function AboutMe() {
                 >
                   UX/UI Design
                 </Code>{" "}
-                y en las metodologías necesarias para crear productos digitales{" "}
+                {language
+                  ? "y en las metodologías necesarias para crear productos digitales"
+                  : "and the methodologies to create digital products focused on the"}{" "}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
                   p={".2em .4em"}
                   borderRadius={"5px"}
                 >
-                  centrados en el usuario.
+                  {language ? "centrados en el usuario." : "user"}
                 </Code>
+                .
               </Text>
               <Text fontSize={"1.1rem"} mb={4}>
-                Y desde hace 1 año y medio tomé la decisión de sumergirme en el{" "}
+                {language
+                  ? "Y desde hace 2 años tomé la decisión de sumergirme en el"
+                  : "since 2 years ago I made the decision to immerse myself in"}{" "}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
                   p={".2em .4em"}
                   borderRadius={"5px"}
                 >
-                  desarrollo web.
+                  {language ? "desarrollo web." : "web development."}
                 </Code>
               </Text>
               <Text fontSize={"1.1rem"} mb={4}>
-                Por último, si tuviera que elegir una cualidad que destaco de
-                mi, sería el mantenerme en constante aprendizaje.
+                {language
+                  ? "Por último, si tuviera que elegir una cualidad que destaco de mi, sería el mantenerme en constante aprendizaje."
+                  : "Finally, if I had to choose a quality that I highlight from me, it would be to keep myself in constant learning."}
               </Text>
             </Box>
 
@@ -287,7 +321,7 @@ export default function AboutMe() {
               mb={2}
               mt={"52px"}
             >
-              🌍 Intereses personales
+              🌍 {language ? "Intereses personales" : "Personal interests"}
             </Heading>
 
             <Divider
@@ -305,8 +339,9 @@ export default function AboutMe() {
                   📝
                 </Text>
                 <Text fontSize={"1.1rem"} mb={4}>
-                  Me gusta escribir y compartir mis ideas en mi blog y redes
-                  sociales.
+                  {language
+                    ? "Me gusta escribir y compartir mis ideas en mi blog y redes sociales."
+                    : "I like to write and share my ideas on my blog and social networks."}
                 </Text>
               </Box>
 
@@ -315,8 +350,9 @@ export default function AboutMe() {
                   📷
                 </Text>
                 <Text fontSize={"1.1rem"} mb={4}>
-                  Me apasiona la fotografía. Siento que me conecta con mi lado
-                  artístico.
+                  {language
+                    ? "Me apasiona la fotografía. Siento que me conecta con mi lado artístico."
+                    : "I am passionate about photography. I feel like it connects me with my artistic side."}
                 </Text>
               </Box>
 
@@ -325,8 +361,9 @@ export default function AboutMe() {
                   📰
                 </Text>
                 <Text fontSize={"1.1rem"} mb={1}>
-                  El tipo de contenido que consumo está relacionado a
-                  tecnología, desarrollo web, negocios, diseño y fútbol.
+                  {language
+                    ? "El tipo de contenido que consumo está relacionado a tecnología, desarrollo web, negocios, diseño y fútbol."
+                    : "The type of content I consume is related to technology, web development, business, design and soccer."}
                 </Text>
               </Box>
             </Box>

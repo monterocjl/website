@@ -303,3 +303,7 @@ a:hover {
   border-radius: 6px;
   object-fit: contain;
 }
+
+.video-portafolio {
+  border-radius: 8px;
+}
