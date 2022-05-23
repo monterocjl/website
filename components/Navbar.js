@@ -55,9 +55,9 @@ export default function Navbar() {
               <Link href='/'>
                 <a className='navbar-titles'>Inicio</a>
               </Link>
-              <Link href='/about'>
+              {/* <Link href='/about'>
                 <a className='navbar-titles'>Sobre mí</a>
-              </Link>
+              </Link> */}
 
               <Link href='/portafolio'>
                 <a className='navbar-titles'>Portafolio</a>
