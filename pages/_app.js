@@ -3,7 +3,7 @@ import "../styles/globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../styles/theme";
 import { AnimatePresence } from "framer-motion";
-import LanguageContext from "../context/languageContext";
+import LanguageContext from "../context/LanguageContext";
 
 function MyApp({ Component, pageProps }) {
   const [language, setLanguage] = useState(true);
