@@ -89,7 +89,7 @@ export default function AboutMe() {
                 >
                   {language ? "emprendimiento" : "entrepreneurship"}
                 </Code>
-                {language ? ", sobretodo el ecosistema de" : ""}{" "}
+                {language ? ", sobretodo el ecosistema de" : ""},
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
@@ -99,7 +99,7 @@ export default function AboutMe() {
                 >
                   startups
                 </Code>{" "}
-                {language ? "y la creación de" : "ecosystem and "}
+                {language ? "y la creación de" : "ecosystem and"}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
@@ -263,7 +263,7 @@ export default function AboutMe() {
                   p={".2em .4em"}
                   borderRadius={"5px"}
                 >
-                  {language ? "diseño" : "design"}
+                  {language ? "diseño" : "graphic design"}
                 </Code>
                 {language
                   ? ", creando piezas gráficas para distintas empresas."
@@ -297,7 +297,7 @@ export default function AboutMe() {
               <Text fontSize={"1.1rem"} mb={4}>
                 {language
                   ? "Y desde hace 2 años tomé la decisión de sumergirme en el"
-                  : "since 2 years ago I made the decision to immerse myself in"}{" "}
+                  : "Since 2 years ago I made the decision to immerse myself in"}{" "}
                 <Code
                   fontWeight={"600"}
                   bg={colorMode === "dark" ? "#193548" : "#c9d1ec"}
