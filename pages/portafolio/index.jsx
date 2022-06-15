@@ -72,7 +72,6 @@ export default function About() {
             <Link href='/portafolio/proyecto-cms-ecommerce'>
               <a>
                 <Image
-                  className='blogs-page_box_article-card_img'
                   borderRadius={"10px 10px 0px 0px"}
                   src='/img/figma-1.jpg'
                   alt='Proyecto Website'
@@ -152,7 +151,6 @@ export default function About() {
             <Link href='/portafolio/proyecto-smiledu'>
               <a>
                 <Image
-                  className='blogs-page_box_article-card_img'
                   borderRadius={"10px 10px 0px 0px"}
                   src='/img/smiledu.png'
                   alt='Proyecto Website'
@@ -234,7 +232,6 @@ export default function About() {
             <Link href='/portafolio/proyecto-website'>
               <a>
                 <Image
-                  className='blogs-page_box_article-card_img'
                   borderRadius={"10px 10px 0px 0px"}
                   src='https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
                   alt='Proyecto Website'
@@ -296,7 +293,6 @@ export default function About() {
             <Link href='/portafolio/proyecto-viabler'>
               <a>
                 <Image
-                  className='blogs-page_box_article-card_img'
                   borderRadius={"10px 10px 0px 0px"}
                   src='https://images.unsplash.com/photo-1592503254549-d83d24a4dfab?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWNvbW1lcmNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
                   alt='E-commerce'

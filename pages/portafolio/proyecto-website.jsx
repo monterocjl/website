@@ -16,14 +16,10 @@ export default function ProyectoWebsite() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <Box className='container_articulo' mt='90px'>
+        <Box mt='90px'>
           <Heading as={"h1"}>Mi sitio web / blog</Heading>
           <Box my={6} display={"flex"}>
-            <Image
-              className='proyecto-image'
-              src='/img/proyecto-website.jpg'
-              alt='Proyecto Viabler'
-            />
+            <Image src='/img/proyecto-website.jpg' alt='Proyecto Viabler' />
           </Box>
           <Heading as={"h2"} fontSize={"24px"}>
             Objetivos

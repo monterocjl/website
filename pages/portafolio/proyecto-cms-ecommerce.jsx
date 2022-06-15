@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Layout from "../../components/Layout/Layout";
 import { motion } from "framer-motion";
 import { Box, Heading, Text, Code, Image } from "@chakra-ui/react";
@@ -17,11 +16,10 @@ export default function ProyectoViabler() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <Box className='container_articulo' mt='90px'>
+        <Box mt='90px'>
           <Heading as={"h1"}>Un e-commerce para emprendedores</Heading>
           <Box my={6} display={"flex"} maxH='320px' w='100%'>
             <Image
-              className='proyecto-image'
               src='/img/figma-1.jpg'
               alt='Proyecto Viabler'
               objectFit='cover'
@@ -117,7 +115,6 @@ export default function ProyectoViabler() {
             </Text>
             <Box mt={3} display={"flex"} maxH='100%' w='100%'>
               <Image
-                className='proyecto-image'
                 src='/img/figma-1.jpg'
                 alt='Proyecto Viabler'
                 objectFit='cover'
@@ -137,7 +134,6 @@ export default function ProyectoViabler() {
             <Text fontSize={"1rem"}>La vista de la gestión de pedidos.</Text>
             <Box mt={3} display={"flex"} maxH='100%' w='100%'>
               <Image
-                className='proyecto-image'
                 src='/img/figma-2.jpg'
                 alt='Proyecto Viabler'
                 objectFit='cover'
@@ -157,7 +153,6 @@ export default function ProyectoViabler() {
             <Text fontSize={"1rem"}>La vista del e-commerce.</Text>
             <Box mt={3} display={"flex"} maxH='100%' w='100%'>
               <Image
-                className='proyecto-image'
                 src='/img/figma-4.jpg'
                 alt='Proyecto Viabler'
                 objectFit='cover'
@@ -177,7 +172,6 @@ export default function ProyectoViabler() {
             <Text fontSize={"1rem"}>La vista mobile del e-commerce.</Text>
             <Box mt={3} display={"flex"} maxH='100%' w='100%'>
               <Image
-                className='proyecto-image'
                 src='/img/figma-6.jpg'
                 alt='Proyecto Viabler'
                 objectFit='cover'
@@ -204,13 +198,7 @@ export default function ProyectoViabler() {
               administrativo. En la URL aparece el nombre de su tienda.
             </Text>
             <Box mt={3} display={"flex"} maxH='100%' w='100%'>
-              <video
-                className='video-portafolio'
-                autoPlay
-                muted
-                loop
-                src='/videos/login.mp4'
-              />
+              <video autoPlay muted loop src='/videos/login.mp4' />
             </Box>
           </Box>
           <Box
@@ -227,13 +215,7 @@ export default function ProyectoViabler() {
               desktop y mobile.
             </Text>
             <Box mt={3} display={"flex"} maxH='100%' w='100%'>
-              <video
-                className='video-portafolio'
-                autoPlay
-                muted
-                loop
-                src='/videos/responsive.mp4'
-              />
+              <video autoPlay muted loop src='/videos/responsive.mp4' />
             </Box>
           </Box>
           <Box
@@ -249,13 +231,7 @@ export default function ProyectoViabler() {
               Las notificaciones ya están implementadas.
             </Text>
             <Box mt={3} display={"flex"} maxH='100%' w='100%'>
-              <video
-                className='video-portafolio'
-                autoPlay
-                muted
-                loop
-                src='/videos/notifications.mp4'
-              />
+              <video autoPlay muted loop src='/videos/notifications.mp4' />
             </Box>
           </Box>
           <Box
@@ -273,13 +249,7 @@ export default function ProyectoViabler() {
               notificaciones, la moneda y más.
             </Text>
             <Box mt={3} display={"flex"} maxH='100%' w='100%'>
-              <video
-                className='video-portafolio'
-                autoPlay
-                muted
-                loop
-                src='/videos/strapi.mp4'
-              />
+              <video autoPlay muted loop src='/videos/strapi.mp4' />
             </Box>
           </Box>
           <Text fontSize={"1rem"}>

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Layout from "../../components/Layout/Layout";
 import { motion } from "framer-motion";
 import { Box, Heading, Text, Code, Image } from "@chakra-ui/react";
@@ -17,16 +16,12 @@ export default function ProyectoViabler() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <Box className='container_articulo' mt='90px'>
+        <Box mt='90px'>
           <Heading as={"h1"}>
             Viabler: Un marketplace que nació como e-commerce
           </Heading>
           <Box my={6} display={"flex"}>
-            <Image
-              className='proyecto-image'
-              src='/img/proyecto-viabler.jpg'
-              alt='Proyecto Viabler'
-            />
+            <Image src='/img/proyecto-viabler.jpg' alt='Proyecto Viabler' />
           </Box>
           <Heading as={"h2"} fontSize={"24px"}>
             Primeras impresiones

@@ -63,12 +63,7 @@ export default function Layout({
         backdropFilter={{ base: "blur(20px)", md: "blur(40px)" }}
       >
         <Stack as='div' display='flex' alignItems='center'>
-          <Box
-            as={motion.div}
-            variants={variants}
-            animate='default'
-            className={s.cursor}
-          />
+          <Box as={motion.div} variants={variants} animate='default' />
           <Navbar scrollSmoothHandler={scrollSmoothHandler} />
           {children}
         </Stack>
