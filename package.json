@@ -15,13 +15,17 @@
     "@emotion/styled": "^11.3.0",
     "@fontsource/open-sans": "^4.5.0",
     "@fontsource/raleway": "^4.5.0",
+    "@fontsource/space-grotesk": "^4.5.8",
+    "@fontsource/zilla-slab": "^4.5.8",
+    "@notionhq/client": "^1.0.4",
+    "cors": "^2.8.5",
+    "formik": "^2.2.9",
     "framer-motion": "^4.1.17",
-    "gray-matter": "^4.0.3",
     "next": "^12.1.5",
-    "next-mdx-remote": "^3.0.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-icons": "^4.2.0"
+    "react-icons": "^4.2.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",

@@ -1,0 +1,14 @@
+.name {
+  position: relative;
+
+  .subline {
+    height: 17px;
+    width: 96%;
+    background-image: linear-gradient(253deg, #0281cf 0%, #4ef63f 100%);
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    z-index: -1;
+    border-radius: 2px;
+  }
+}

@@ -1,5 +1,7 @@
+import "@fontsource/zilla-slab";
+import "@fontsource/space-grotesk";
 import { useState } from "react";
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../styles/theme";
 import { AnimatePresence } from "framer-motion";
