@@ -17,7 +17,7 @@ export default function Form() {
 
     onSubmit: async (formData) => {
       const JSONdata = JSON.stringify(formData);
-      const endpoint = "https://juanmontero.co/api/leads";
+      const endpoint = "/api/leads";
 
       const options = {
         method: "POST",

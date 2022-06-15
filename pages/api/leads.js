@@ -25,7 +25,7 @@ export default async function handler(req, res) {
         title: [
           {
             text: {
-              content: body.identifier,
+              content: body.identifier ? body.identifier : "",
             },
           },
         ],
@@ -34,7 +34,7 @@ export default async function handler(req, res) {
         rich_text: [
           {
             text: {
-              content: body.product,
+              content: body.product ? body.product : "",
             },
           },
         ],
@@ -43,7 +43,7 @@ export default async function handler(req, res) {
         rich_text: [
           {
             text: {
-              content: body.message,
+              content: body.message ? body.message : "",
             },
           },
         ],
