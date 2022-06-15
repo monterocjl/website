@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Stack, Box } from "@chakra-ui/react";
 import Navbar from "../Navbar";
 import { motion } from "framer-motion";
+import s from "./styles.module.scss";
 
 export default function Layout({
   children,
@@ -63,7 +64,12 @@ export default function Layout({
         backdropFilter={{ base: "blur(20px)", md: "blur(40px)" }}
       >
         <Stack as='div' display='flex' alignItems='center'>
-          <Box as={motion.div} variants={variants} animate='default' />
+          <Box
+            as={motion.div}
+            variants={variants}
+            animate='default'
+            className={s.cursor}
+          />
           <Navbar scrollSmoothHandler={scrollSmoothHandler} />
           {children}
         </Stack>
