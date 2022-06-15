@@ -16,9 +16,6 @@ export default async function handler(req, res) {
 
   // Get data submitted in request's body.
   const body = req.body;
-
-  console.log(body);
-
   const new_lead = {
     parent: {
       database_id: process.env.NOTION_LEADS_DATABASE_ID,
