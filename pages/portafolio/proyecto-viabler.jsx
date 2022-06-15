@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layout/Layout";
 import { motion } from "framer-motion";
 import { Box, Heading, Text, Code, Image } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/color-mode";

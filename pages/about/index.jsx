@@ -1,4 +1,4 @@
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layout/Layout";
 import { motion } from "framer-motion";
 import { Box, Heading } from "@chakra-ui/react";
 

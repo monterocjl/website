@@ -3,8 +3,6 @@ import Head from "next/head";
 import { Stack, Box } from "@chakra-ui/react";
 import Navbar from "../Navbar";
 import { motion } from "framer-motion";
-import s from "./styles.module.scss";
-import Footer from "../Footer";
 
 export default function Layout({
   children,
@@ -73,7 +71,6 @@ export default function Layout({
           />
           <Navbar scrollSmoothHandler={scrollSmoothHandler} />
           {children}
-          {/* <Footer /> */}
         </Stack>
       </Stack>
 
