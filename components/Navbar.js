@@ -11,10 +11,10 @@ export default function Navbar({ scrollSmoothHandler }) {
             <Link href='/'>
               <a>
                 <Image
-                  width={"48px"}
-                  height={"48px"}
+                  width={"52px"}
+                  height={"52px"}
                   priority
-                  src='/img/avatar.png'
+                  src='/img/logo-jl.png'
                   alt='Juan Montero'
                 />
               </a>
@@ -22,14 +22,8 @@ export default function Navbar({ scrollSmoothHandler }) {
           </HStack>
 
           <Flex alignItems={"center"}>
-            <HStack
-              as={"nav"}
-              mr={5}
-              spacing={5}
-              display={{ base: "none", md: "flex" }}
-            ></HStack>
             <Button
-              size={"sm"}
+              size={"md"}
               bgImage='linear-gradient(253deg, #0095a6 0%, #0dd587 100%)'
               color='#000'
               onClick={scrollSmoothHandler}

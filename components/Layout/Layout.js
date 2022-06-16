@@ -69,6 +69,7 @@ export default function Layout({
             variants={variants}
             animate='default'
             className={s.cursor}
+            display={{ base: "none", md: "block" }}
           />
           <Navbar scrollSmoothHandler={scrollSmoothHandler} />
           {children}

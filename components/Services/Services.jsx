@@ -145,7 +145,7 @@ export function Notion() {
           as='h3'
           fontWeight='bold'
           fontSize={{ base: "18px", md: "22px" }}
-          color={{ base: "#0bcd8b", md: "white" }}
+          color={{ base: "#0bcd8b" }}
           maxW='70%'
           mt='-10px'
         >
@@ -158,14 +158,15 @@ export function Notion() {
           w={{ base: "100%", md: "75%" }}
           fontSize={{ base: "18px", md: "20px" }}
         >
-          This option is the best for blogs, business websites, Gumroad products
-          or any other digital product. How does it work? I take care of
-          creating an amazing website that will be connected to your Notion
-          account (the best platform all-in-one workspace), from Notion you will
-          be able to update the content of the website super fast and as many
-          times as you want. In addition, you will be able to create all the
-          publications you want for your blog and they will appear on your
-          website automatically.
+          This option is{" "}
+          <span style={{ color: "#0bcd8b", fontWeight: "bold" }}>the best</span>{" "}
+          for blogs, business websites, Gumroad products or any other digital
+          product. How does it work? I take care of creating an amazing website
+          that will be connected to your Notion account (the best platform
+          all-in-one workspace), from Notion you will be able to update the
+          content of the website super fast and as many times as you want. In
+          addition, you will be able to create all the publications you want for
+          your blog and they will appear on your website automatically.
         </Box>
         <Box
           as='p'
