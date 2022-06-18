@@ -13,7 +13,12 @@ export default function WhyWithMe() {
           minH='80px'
           borderBottom='1px solid #0bcd8b6b'
         >
-          <Box as='h3' px='1rem' fontSize={{ base: "23px", md: "38px" }} my={5}>
+          <Box
+            as='h3'
+            px={{ base: "1rem", md: "0px" }}
+            fontSize={{ base: "23px", md: "38px" }}
+            my={5}
+          >
             I create websites FAST for a better experience.
           </Box>
         </Box>
@@ -119,7 +124,7 @@ export default function WhyWithMe() {
             fontSize={{ base: "23px", md: "38px" }}
             my={5}
           >
-            I will be a partner for your bussiness. A helper.
+            I will be a partner for your business. A helper.
           </Box>
         </Box>
       </Box>
