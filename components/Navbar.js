@@ -14,7 +14,7 @@ export default function Navbar({ scrollSmoothHandler }) {
                   width={"52px"}
                   height={"52px"}
                   priority
-                  src='/img/logo-jl.png'
+                  src='/img/avatar.png'
                   alt='Juan Montero'
                 />
               </a>

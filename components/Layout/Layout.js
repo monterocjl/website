@@ -56,7 +56,7 @@ export default function Layout({
       <Head>
         <title>{title}</title>
         <meta name='description' content={description} />
-        <link rel='icon' href='/favicon-jm.svg' />
+        <link rel='icon' href='/img/avatar.png' />
       </Head>
       <Stack
         bg='#00000000'
